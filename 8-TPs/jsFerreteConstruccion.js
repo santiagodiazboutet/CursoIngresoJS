@@ -33,7 +33,9 @@ function Materiales ()
 	var Ancho=document.getElementById('Ancho').value;
 	Largo=parseInt(Largo);
 	Ancho=parseInt(Ancho);
-	var perimetro=Largo*2+Ancho*2;
-	var alambre=perimetro*3;
-	alert(alambre);
+	var superficie=Largo*Ancho;
+	var cemento=superficie*2;
+	var cal=superficie*3;
+	alert("Se necesitan "+cemento+" bolsas de cemento y "
+	+cal+" bolsas de cal."	);
 }
