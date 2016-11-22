@@ -6,7 +6,7 @@ function FahrenheitCentigrados ()
 {
 	var Temperatura=document.getElementById('Temperatura').value;
 	Temperatura=parseInt(Temperatura);
-	alert((Temperatura-32)/1.8+"°C" )
+	alert((Temperatura-32)/1.8+"°C" );
 
 }
 
@@ -14,5 +14,5 @@ function CentigradosFahrenheit ()
 {
 	var Temperatura=document.getElementById('Temperatura').value;
 	Temperatura=parseInt(Temperatura);
-	alert((Temperatura*1.8)+32+"°F" )
+	alert((Temperatura*1.8)+32+"°F" );
 }
