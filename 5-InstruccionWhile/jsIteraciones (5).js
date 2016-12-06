@@ -1,9 +1,10 @@
 function Mostrar()
 {
 var sexo;
-while(sexo=="f"&&sexo=="m")
+
+while(sexo!="f"&&sexo!="m")
 {
-sexo = prompt("ingrese f ó m .").value;
+sexo=prompt("Ingrese su sexo.");
 }
 document.getElementById('Sexo').value=sexo;
 

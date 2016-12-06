@@ -19,7 +19,7 @@ function comenzar()
 
 	numeroSecreto=Math.floor((Math.random()*100)+1);
 	contadorIntentos=0;
-
+console.log(numeroSecreto);
 }
 
 function verificar()
@@ -29,9 +29,10 @@ function verificar()
 	//o var=var+1; o var++;
 	var numero;
 	numero=document.getElementById('numero').value;
+console.log(contadorIntentos);
 	if (numero==numeroSecreto)
 	{
-		if (contadorIntentos==1)
+		/*if (contadorIntentos==1)
 		{
 			alert("Usted es un Psíquico");
 		}
@@ -58,6 +59,35 @@ function verificar()
 		else
 		{
 			alert("Afortunado en el amor!!!");
+		}*/
+
+		switch(contadorIntentos)
+		{
+			case 1:
+			alert("Usted es un Psíquico");
+			break;
+			case 2:
+			alert("Excelente percepción");
+			break;
+			case 3:
+			alert("Esto es suerte");
+			break;
+			case 4:
+			alert("Excelente técnica");
+			break;
+			case 5:
+			alert("Usted está en la media");
+			break;
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			alert("Falta técnica");
+			break;
+			default:
+			alert("Afortunado en el amor!!!");
+			break;
 		}
 	}
 	else if (numero>numeroSecreto)
